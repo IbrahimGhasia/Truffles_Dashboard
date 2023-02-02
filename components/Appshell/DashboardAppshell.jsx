@@ -1,3 +1,5 @@
+import Navbar from "./Navbar";
+
 const DashboardAppshell = (props) => {
 	return (
 		<>
@@ -15,6 +17,9 @@ const DashboardAppshell = (props) => {
 								<img src="/user_circle.svg" />
 								<p className="text-sm text-gray_">Evan Winter</p>
 								<img src="/notification_bell.svg" />
+								<d className="bg-[#F5222D] text-[#fff] text-[11px] rounded-full absolute h-[15px] w-[15px] text-center top-[28px] right-[44px]">
+									4
+								</d>
 							</div>
 						</div>
 					</div>
@@ -23,7 +28,7 @@ const DashboardAppshell = (props) => {
 
 			<div className="grid grid-cols-4 mt-7">
 				<nav>
-					<p>Navbar</p>
+					<Navbar />
 				</nav>
 
 				<div className="col-span-3">
