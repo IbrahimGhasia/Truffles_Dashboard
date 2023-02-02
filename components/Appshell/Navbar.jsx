@@ -1,7 +1,7 @@
 const Navbar = (props) => {
 	return (
 		<>
-			<ul className="text-gray_ mx-12">
+			<ul className="text-gray_ mx-8">
 				<div className="flex flex-row border-solid border-0 rounded-lg p-3 bg-white cursor-pointer">
 					<img
 						src="/dashboard_icon.svg"
