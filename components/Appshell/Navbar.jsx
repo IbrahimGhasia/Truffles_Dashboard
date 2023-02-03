@@ -1,6 +1,6 @@
 const Navbar = (props) => {
 	return (
-		<>
+		<div className="h-screen bg-gray-100">
 			<ul className="text-gray_ mx-8">
 				<div className="flex flex-row border-solid border-0 rounded-lg p-3 bg-white cursor-pointer">
 					<img
@@ -15,7 +15,7 @@ const Navbar = (props) => {
 						src="/invoice_icon.svg"
 						className=" p-2 border-0 rounded-lg bg-white shadow-md"
 					/>
-					<li className="ml-3 mt-1.5 text-sm">Dashboard</li>
+					<li className="ml-3 mt-1.5 text-sm">Invoice</li>
 				</div>
 
 				<div className="flex flex-row border-solid border-0 rounded-lg p-4 cursor-pointer">
@@ -50,7 +50,7 @@ const Navbar = (props) => {
 					<li className="ml-3 mt-1.5 text-sm">Contact</li>
 				</div>
 			</ul>
-		</>
+		</div>
 	);
 };
 export default Navbar;

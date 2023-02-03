@@ -8,7 +8,7 @@ const Alert = () => {
 						<p className="text-white text-sm font-medium">
 							Please Complete the KYC
 						</p>
-						<p className="text-white text-xs">
+						<p className="text-xs text-gray-100">
 							Please follow the instructions in the email to complete account
 							verification. Make sure to check your promotions/spam as well.
 						</p>
