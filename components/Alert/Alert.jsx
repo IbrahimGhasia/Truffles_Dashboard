@@ -13,7 +13,7 @@ const Alert = () => {
 							verification. Make sure to check your promotions/spam as well.
 						</p>
 					</div>
-					<div className="absolute right-0 mr-3 mt-2">
+					<div className="absolute right-0 mr-3 mt-2 cursor-pointer">
 						<img src="/close_icon.svg" />
 					</div>
 				</div>

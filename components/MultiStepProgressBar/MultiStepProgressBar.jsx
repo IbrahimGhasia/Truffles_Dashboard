@@ -77,31 +77,31 @@ const MultiStepProgressBar = ({ progress, setProgress }) => {
 				<div className="">
 					<div className="progress-bar--labels flex flex-col mt-2">
 						<span
-							className={`font-[600] leading-[16px] mb-[50px] w-[200px] ${
-								progress === 1 && "text-[#7445F8]"
+							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs ${
+								progress === 1 && "text-[#7445F8] "
 							} `}
 						>
 							User Information
 						</span>
 
 						<span
-							className={`font-[600] leading-[16px] mb-[50px] w-[200px] ${
-								progress === 2 && "text-[#7445F8]"
+							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs ${
+								progress === 2 && "text-[#7445F8] "
 							}`}
 						>
-							Admin and Operations
+							Buisness Information 1
 						</span>
 
 						<span
-							className={`font-[600] leading-[16px] mb-[50px] w-[200px] ${
+							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs ${
 								progress === 3 && "text-[#7445F8]"
 							}`}
 						>
-							Business Information
+							Business Information 2
 						</span>
 
 						<span
-							className={`font-[600] leading-[16px] pb-[50px] w-[200px] ${
+							className={`font-[600] leading-[16px] pb-[38px] w-[200px] text-xs ${
 								progress === 4 && "text-[#7445F8]"
 							}`}
 						>

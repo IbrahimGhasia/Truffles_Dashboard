@@ -1,4 +1,5 @@
 import Dashboard from "components/Dashboard/Dashboard";
+import Link from "next/link";
 import Navbar from "./Navbar";
 
 const DashboardAppshell = (props) => {
@@ -7,7 +8,10 @@ const DashboardAppshell = (props) => {
 			<div className="grid grid-cols-5 border-b-2 pb-7">
 				<div>
 					<div>
-						<img src="/truffle_logo.svg" className="mt-7 ml-12" />
+						<img
+							src="/truffle_logo.svg"
+							className="mt-7 ml-12 cursor-pointer"
+						/>
 					</div>
 				</div>
 				<div className="col-span-4">
@@ -16,7 +20,10 @@ const DashboardAppshell = (props) => {
 						<div className="mt-8">
 							<div className="flex flex-row gap-3 mr-12">
 								<img src="/user_circle.svg" />
-								<p className="text-sm text-gray_">Evan Winter</p>
+								<Link href="/user_information">
+									<p className="text-sm text-gray_">Evan Winter</p>
+								</Link>
+
 								<img src="/notification_bell.svg" />
 							</div>
 						</div>

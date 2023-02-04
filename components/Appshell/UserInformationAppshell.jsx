@@ -1,36 +1,16 @@
 import { useState } from "react";
 import MultiStepProgressBar from "components/MultiStepProgressBar/MultiStepProgressBar";
+import PageOne from "components/UserInformation/PageOne";
+import PageTwo from "components/UserInformation/PageTwo";
+import PageThree from "components/UserInformation/PageThree";
+import Link from "next/link";
 
 const UserInformationAppshell = () => {
-	// const [page, setPage] = useState("pageone");
 	const [progress, setProgress] = useState(1);
-
-	// const nextPage = (page) => {
-	// 	setPage(page);
-	// };
 
 	const nextPage = (progress) => {
 		setProgress(progress);
 	};
-
-	// const nextPageNumber = (pageNumber) => {
-	// 	switch (pageNumber) {
-	// 		case "1":
-	// 			setPage("pageone");
-	// 			break;
-	// 		case "2":
-	// 			setPage("pagetwo");
-	// 			break;
-	// 		case "3":
-	// 			setPage("pagethree");
-	// 			break;
-	// 		case "4":
-	// 			alert("Ooops! Seems like you did not fill the form.");
-	// 			break;
-	// 		default:
-	// 			setPage("1");
-	// 	}
-	// };
 
 	const nextPageNumber = (pageNumber) => {
 		switch (pageNumber) {
@@ -44,7 +24,6 @@ const UserInformationAppshell = () => {
 				setProgress(3);
 				break;
 			case 4:
-				// alert("Ooops! Seems like you did not fill the form.");
 				setProgress(4);
 				break;
 			default:
@@ -52,10 +31,15 @@ const UserInformationAppshell = () => {
 		}
 	};
 	return (
-		<>
+		<div>
 			<div className="grid grid-cols-5 border-b-2 pb-7">
 				<div>
-					<img src="/truffle_logo.svg" className="mt-7 ml-12 cursor-pointer" />
+					<Link href="/">
+						<img
+							src="/truffle_logo.svg"
+							className="mt-7 ml-12 cursor-pointer"
+						/>
+					</Link>
 				</div>
 
 				<div className="col-span-4">
@@ -70,22 +54,26 @@ const UserInformationAppshell = () => {
 				</div>
 			</div>
 			<div className="grid grid-cols-5">
-				<div className="h-screen bg-gray-100">
-					<div className="">
-						{/* <MultiStepProgressBar
-							page={page}
-							onPageNumberClick={nextPageNumber}
-						/> */}
-
+				<div className="h-[70rem] bg-gray-100">
+					<div>
 						<MultiStepProgressBar
 							progress={progress}
 							setProgress={nextPageNumber}
 						/>
 					</div>
 				</div>
-				<div className="col-span-4"></div>
+				<div className="col-span-4">
+					{
+						{
+							1: <PageOne onButtonClick={nextPage} />,
+							2: <PageTwo onButtonClick={nextPage} />,
+							3: <PageThree onButtonClick={nextPage} />,
+							// 4: <PageFour />,
+						}[progress]
+					}
+				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 export default UserInformationAppshell;
