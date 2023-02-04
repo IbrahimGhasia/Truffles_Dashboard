@@ -77,33 +77,37 @@ const MultiStepProgressBar = ({ progress, setProgress }) => {
 				<div className="">
 					<div className="progress-bar--labels flex flex-col mt-2">
 						<span
-							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs ${
+							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs cursor-pointer ${
 								progress === 1 && "text-[#7445F8] "
 							} `}
+							onClick={() => setProgress(1)}
 						>
 							User Information
 						</span>
 
 						<span
-							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs ${
+							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs cursor-pointer ${
 								progress === 2 && "text-[#7445F8] "
 							}`}
+							onClick={() => setProgress(2)}
 						>
 							Buisness Information 1
 						</span>
 
 						<span
-							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs ${
+							className={`font-[600] leading-[16px] mb-[50px] w-[200px] text-xs cursor-pointer ${
 								progress === 3 && "text-[#7445F8]"
 							}`}
+							onClick={() => setProgress(3)}
 						>
 							Business Information 2
 						</span>
 
 						<span
-							className={`font-[600] leading-[16px] pb-[38px] w-[200px] text-xs ${
+							className={`font-[600] leading-[16px] pb-[38px] w-[200px] text-xs cursor-pointer ${
 								progress === 4 && "text-[#7445F8]"
 							}`}
+							onClick={() => setProgress(4)}
 						>
 							Upload Documents
 						</span>
