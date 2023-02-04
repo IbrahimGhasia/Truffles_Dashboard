@@ -79,7 +79,7 @@ const PageTwo = ({ onButtonClick }) => {
 					</button>
 					<button
 						type="button"
-						class="text-white bg-purple_ hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2 mb-2 w-[120px] h-[42px] focus:outline-none"
+						class="text-white bg-purple_ hover:bg-purple-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2 mb-2 w-[120px] h-[42px] focus:outline-none"
 						onClick={() => {
 							onButtonClick(3);
 						}}
