@@ -1,6 +1,6 @@
 # Truffle Dashboard
 
-This is an internship assignment. I have created Truffle Dashboard. I have used Tailwind CSS and Next Js to build it.
+This is an internship assignment. I have build Truffle Dashboard using Tailwind CSS and Next Js.
 
 <i><b>You can check the live demo <a href="https://truffles-dashboard-assignment.vercel.app/">here.</a>
 </i>
