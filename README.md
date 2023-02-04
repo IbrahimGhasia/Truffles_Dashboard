@@ -6,6 +6,12 @@ This is an internship assignment. I have build Truffle Dashboard using Tailwind 
 </i>
 </b>
 
+## Preview
+
+<img src="https://github.com/IbrahimGhasia/Truffles_Dashboard/blob/main/screenshots/Screenshot%202023-02-04%20at%207.08.38%20PM.png?raw=true" alt="preview_1" />
+
+<img src="https://github.com/IbrahimGhasia/Truffles_Dashboard/blob/main/screenshots/Screenshot%202023-02-04%20at%207.09.10%20PM.png?raw=true" alt="preview_2" />
+
 <br>
 <br>
 <hr>
